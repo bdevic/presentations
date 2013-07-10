@@ -1,0 +1,626 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Vaadin + XTend</title>
+
+<meta name="description"
+	content="A framework for easily creating beautiful presentations using HTML">
+<meta name="author" content="Hakim El Hattab">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style"
+	content="black-translucent" />
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/reveal.min.css">
+<!--<link rel="stylesheet" href="css/theme/default.css" id="theme">-->
+<link href="css/application.css" media="all" rel="stylesheet" type="text/css" />
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write('<link rel="stylesheet" href="css/print/'
+			+ (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')
+			+ '.css" type="text/css" media="print">');
+</script>
+
+<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+<div class="reveal theme-font-league theme-color-black-mint">
+		<div class="slides">
+    <section>
+        <h1>
+<span style="background-color: rgb(111, 168, 220);">Vaadin</span>
+        <span style="background-color: rgb(0, 0, 0);">&nbsp;</span>
+</h1>
+<h1>+</h1>
+<h1>
+        <span style="background-color: rgb(106, 168, 79);">XTEND</span>
+    </h1>
+<div>
+    <span style="background-color: rgb(106, 168, 79);">
+        <br>
+    </span>
+</div>
+<div>
+<span style="background-color: rgb(106, 168, 79);">
+    <br>
+</span>
+</div>
+<div>
+<span style="background-color: rgb(106, 168, 79);">
+    <br>
+</span>
+</div>
+<div>
+<span style="background-color: rgb(106, 168, 79);">
+    <br>
+</span>
+</div>
+<h3 style="text-align: right;">
+<font style="font-size: 18px;">BRUNO DEVIĆ</font>
+</h3>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">
+        <br>
+    </h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/brunodevic/images/41638/sshot-76-1.png" style="">
+    <br>
+</section>
+<section>
+    <h3>
+        <span>
+            <br>
+        </span>
+    </h3>
+<h3>
+    <span>
+        <br>
+    </span>
+</h3>
+<h3>Vaadin is a framework for <font style="background-color: rgb(111, 168, 220);">desktop-like</font> Web Apps<br>
+</h3>
+<h3>
+<br>
+</h3>
+<h3>SERVER BASED RIA FRAMEWORK</h3>
+<h3>USES GWT AS RENDERING ENGINE</h3>
+<h3>
+</h3>
+<h3>PURE JAVA, NO JAVASCRIPT, NO CONFIGURATION</h3>
+<h3>RICH WIDGETSET</h3>
+
+
+
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<span>
+    <br>
+</span>
+</div>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+<h2 style="text-align: justify;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/brunodevic/images/41487/sshot-83.png" style="font-size: 75.96px; height: 497px;">
+    <br>
+</h2>
+</section>
+<section>
+    <h3 style="font-style: normal; font-variant: normal;">
+    <span style="background-color: rgb(111, 168, 220);">HELLO WORLD</span>
+</h3>
+<h2>
+    <pre class="programlisting" xml:space="preserve" id="aui_3_2_0_192" style="margin: 0px 0px 14px 49px; padding: 14px; white-space: pre; background-color: rgb(230, 248, 254); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; overflow: auto; color: rgb(70, 68, 64); font-style: normal; font-variant: normal; text-transform: none; font-size: 18px;">import com.vaadin.server.VaadinRequest;
+import com.vaadin.ui.Label;
+import com.vaadin.ui.UI;
+
+public class HelloWorld extends UI {
+&nbsp;&nbsp;&nbsp;&nbsp;@Override
+&nbsp;&nbsp;&nbsp;&nbsp;protected void init(VaadinRequest request) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VerticalLayout content = new VerticalLayout();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content.addComponent(new Label("Hello World!"));                                         <span style="font-family: monospace; white-space: pre-wrap;">setContent(content);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</pre>
+</h2>
+
+
+</section>
+    <section>
+        <div>
+            <br>
+        </div>
+<div>
+        <br>
+    </div>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/brunodevic/images/41486/sshot-82.png" style="">
+    <br>
+</div>
+<div>
+    <br>
+</div>
+</section>
+<section>
+    <h3>Thin CLIENT<br>MVC + <span style="background-color: rgb(250, 0, 95);">JSP</span>
+</h3>
+<h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/brunodevic/images/41509/sshot-80.png" style="">
+    <br>
+</h2>
+</section>
+<section>
+    <h3>CLIENT SIDE RIA<br>MVC + <span style="background-color: rgb(106, 168, 79);">EXTJS</span>
+</h3>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/brunodevic/images/41512/sshot-79.png" style="">
+    <br>
+</div>
+</section>
+<section>
+    <h3>SERVER SIDE RIA<br>
+        <span style="background-color: rgb(111, 168, 220);">VAADIN</span>
+</h3>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/brunodevic/images/41515/sshot-81.png" style="">
+        <br>
+</div>
+    </section>
+    <section>
+        <h3 class="absolute-element" style="position: absolute; width: 339px; height: 111px; z-index: 6; left: 613px; top: 174px;">
+<font>
+<font size="5">
+    <span style="background-color: rgb(250, 0, 95);">EXPERIENCE</span>
+</font>
+<br>
+        <ul style="font-size: 24px;">
+<li>
+<span>NOT AS SCALABLE - SESSION SIZE, REQUESTS</span>
+</li>
+        <li>
+<span>NO OFFLINE MODE</span>
+</li>
+<li>
+<span>LOOK &amp; FEEL - WIDGETS, LAYOUT OPTIONS, DOM SIZE</span>
+</li>
+<li>
+        <span>NEW CODE STRUCTURE - MVP, EVENT BUS</span>
+    </li>
+</ul>
+<ul style="font-size: 24px;">
+</ul>
+<div style="font-size: 24px; text-align: left;">
+<span>
+    <br>
+</span>
+</div>
+    </font>
+</h3>
+<h3 class="absolute-element" style="position: absolute; width: 74px; height: 60px; z-index: 4; left: 388px; top: 130px;" data-fragment-index="0">
+    <font style="font-size: 24px; background-color: rgb(111, 168, 220);">SIMPLER</font>
+</h3>
+<div class="absolute-element" style="position: absolute; width: 265px; height: 106px; z-index: 4; left: 297px; top: 199px;">
+    <h3>
+        <font style="font-size: 24px;">
+            <font>
+                <ul>
+<font>
+                        <li data-fragment-index="1">100% JAVA</li>
+                        <li data-fragment-index="2">
+                            <span>Strongly typed - LESS BUGS, DEBUGGING</span>
+</li>
+                        <li data-fragment-index="3">
+                            <span>Object oriented - COMPONENTS</span>
+</li>
+</font>
+</ul>
+</font>
+</font>
+</h3>
+</div>
+<h3 class="absolute-element" style="position: absolute; width: 274px; height: 254px; z-index: 9; left: 10px; top: 308px;">
+    <font style="font-size: 24px;">
+        <span style="background-color: rgb(111, 168, 220);">OPEN SOURCE</span>
+<br>
+<ul>
+<li>
+                <span style="text-align: center;">FREE APACHE LICENSE</span>
+</li>
+<li data-fragment-index="6">
+<span>OK DOCUMENTATION - BOOK OF VAADIN, SAMPLER, TRAC &nbsp; &nbsp;&nbsp;</span>
+</li>
+        </ul>
+</font>
+    <div>
+        <font>
+            
+                <font>
+<span data-fragment-index="7" style="font-size: 18px; background-color: rgb(111, 168, 220);">LESS OVERHEAD</span>
+                <br>
+</font>
+</font>
+<h3>
+<ul>
+<font style="font-size: 24px;">
+    <li style="text-align: left;" data-fragment-index="8">
+        <span>code stays on server</span>
+    </li>
+    <li style="text-align: left;" data-fragment-index="9">
+        <span>no UI SERVICES LAYER</span>
+    </li>
+    <li style="text-align: left;" data-fragment-index="10">
+<span>FAST DEVELOPMENT - JREBEL</span>
+</li>
+    </font>
+</ul>
+</h3>
+</div>
+    </h3>
+<div style="text-align: center; position: absolute; width: 340px; height: 175px; z-index: 7; left: 562px; top: 460px;" class="absolute-element">
+    <h3>
+<font data-fragment-index="13" style="font-size: 24px; background-color: rgb(111, 168, 220);">SERVER SIDE</font>
+</h3>
+<div>
+    <h3>
+        <font style="font-size: 24px;">
+            <ul>
+<font>
+                    <li data-fragment-index="14">ANY JVM LANGUAGE - GROOVY, SCALADIN</li>
+                    <li data-fragment-index="15">
+                        <span>ALL JAVA TOOLS AND LIBRARIES - ADDON FOR SPRING, ACTIVITI DEMO</span>
+</li>
+                    <li data-fragment-index="16">
+                        <span>SERVLET, PORTLET :) (LIFERAY), OSGi</span>
+                    </li>
+                </font>
+            </ul>
+</font>
+    </h3>
+    </div>
+</div>
+<br>
+<div>
+    <font style="font-size: 24px;">
+<font>
+    </font>
+</font>
+</div>
+<div>
+    <font style="font-size: 24px;">
+        <span>
+            <br>
+</span>
+    </font>
+</div>
+<h2 class="absolute-element" style="position: absolute; width: 319px; height: 77px; z-index: 12; left: 293px; top: 367px;">VAADIN<br>
+<span style="background-color: rgb(111, 168, 220);">PRO </span>/ <span style="background-color: rgb(250, 0, 95);">CONS</span>
+</h2>
+</section>
+<section>
+    <h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/brunodevic/images/41535/logo.png" style="height: 90px;">
+    <br>
+</h2>
+<div>
+<h3>
+    <font style="font-size: 24px;">
+        <font>
+            <font style="background-color: rgb(106, 168, 79);">XTEND IS A FLEXIBLE AND EXPRESSIVE DIALECT OF JAVA, WHICH COMPILES INTO READABLE JAVA 5 COMPATIBLE SOURCE CODE</font>
+        </font>
+    </font>
+</h3>
+<h3>
+<font style="font-size: 24px;">
+    <font>
+        <font style="background-color: rgb(106, 168, 79);">YOU CAN USE ANY EXISTING JAVA LIBRARY SEAMLESSLY</font>
+    </font>
+</font>
+</h3>
+<h3>
+<font style="font-size: 24px;">
+<font>
+    <font>
+        <font style="background-color: rgb(106, 168, 79);">THE COMPILED OUTPUT IS READABLE AND TENDS TO RUN AS FAST&nbsp;</font>
+    </font>
+</font>
+<span style="background-color: rgb(106, 168, 79);">AS THE EQUIVALENT HANDWRITTEN JAVA CODE</span>
+</font>
+</h3>
+</div>
+<div>
+<span style="background-color: rgb(106, 168, 79); font-size: 24px;">
+    <br>
+</span>
+</div>
+<h3>
+<span style="background-color: rgb(106, 168, 79);">
+    <font style="font-size: 32px;">COFFEESCRIPT FOR JAVA</font>
+</span>
+</h3>
+<div>
+<span style="font-size: 16px; font-style: normal; font-variant: normal; text-align: left; word-spacing: 2.4000000953674316px; background-color: rgb(34, 34, 34);">
+    <br>
+</span>
+</div>
+</section>
+<section>
+    <h3>
+<span>JAVA'S TYPE SYSTEM AND LIBRARY</span>
+    <br>
+</h3>
+<h3>
+    <span>JAVA'S IDE SUPPORT</span>
+</h3>
+<div>
+<h3>
+<span style="background-color: rgb(106, 168, 79);">Xtend and Java are</span>
+</h3>
+<h3>
+<span style="background-color: rgb(106, 168, 79);">100% interoperable</span>
+</h3>
+<h3>ANDROID AND GWT SUPPORT</h3>
+</div>
+</section>
+<section>
+    <h3>
+    <span style="background-color: rgb(250, 0, 95);">JAVA</span>
+</h3>
+<div>
+<pre style="margin-right: 0px; margin-left: 0px; background-color: rgb(248, 248, 248); border: 1px solid rgb(221, 221, 221); overflow: auto; padding: 6px 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">
+    <font style="font-size: 18px;">
+        <font color="#000000"><span style="white-space: pre;">
+clearBtn.addClickHandler(new ClickHandler() {
+    @Override
+    public void onClick(ClickEvent event)  {
+  	  List&lt;Todo&gt; result = new ArrayList&lt;Todo&gt;();
+  	  for(Todo  t : getTodos()) {
+  		  if(!t.isDone()) {
+  			  result.add(t);
+  		  }
+  	  }
+  	  setTodos(result);
+    }
+}</span>
+    </font>
+</font>
+</pre>
+</div>
+<h3>
+<span style="background-color: rgb(106, 168, 79);">XTEND</span>
+</h3>
+<div>
+<pre style="margin-right: 0px; margin-left: 0px; background-color: rgb(248, 248, 248); border: 1px solid rgb(221, 221, 221); overflow: auto; padding: 6px 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; font-style: normal; font-variant: normal;">
+<font style="font-size: 18px;">
+    <font color="#000000">clearBtn.addClickHandler [</font> <span style="color: rgb(0, 0, 0); font-family: monospace; background-color: transparent;">todos = todos.filter[!done].toList ]</span>
+</font>
+</pre>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+
+</section>
+<section>
+<h3 style="text-align: left;">
+<font style="font-size: 24px;">
+<span style="background-color: rgb(106, 168, 79);">EXTENSION METHODS</span> ENHANCE CLOSED TYPES WITH NEW FUNCTIONALITY</font>
+    </h3>
+    <div>
+        <font>
+<pre><code>"hello".toFirstUpper() // calls StringExtensions.toFirstUpper("hello")</code></pre>
+    </font>
+    <h3 style="text-align: left;">
+        <font style="font-size: 24px;">
+            <span style="background-color: rgb(106, 168, 79);">LAMBDA EXPRESSIONS</span> CONCISE SYNTAX FOR ANONYMOUS FUNCTION LITERALS
+        </font>
+    </h3>
+    <div>
+        <font>
+            <pre><code>Collections::sort(someStrings) [ a, b | a.length - b.length ]</code></pre>
+        </font>
+    </div>
+    <h3 style="text-align: left;">
+<font style="font-size: 24px;">
+    <span style="text-align: center;">
+        <span style="background-color: rgb(106, 168, 79);">ACTIVE ANNOTATIONS</span> ANNOTATION PROCESSING ON STEROIDS</span>
+    </font>
+</h3>
+    <div>
+        <font>
+            <pre><code>class MyClass {
+   @Lazy String myField = expensiveComputation()
+}</code></pre>
+        </font>
+    </div>
+    <h3 style="text-align: left;">
+<font style="font-size: 24px;">
+    <span style="background-color: rgb(106, 168, 79);">TYPE INFERENCE</span> YOU RARELY NEED TO WRITE DOWN TYPE SIGNATURES ANYMORE</font>
+    <span style="white-space: pre-wrap; color: rgb(220, 220, 220); text-align: center;">           </span>
+</h3>
+<div>
+    <font>
+<pre><code>def getResult() {
+    val results = #{"a" -&gt; 1 ,"b" -&gt; 2}
+    results.get("a")
+}</code></pre>
+        </font>
+    </div>
+</div>
+
+
+
+
+</section>
+<section>
+<h3 style="text-align: left;">
+    <font style="font-size: 24px;">
+        <span style="background-color: rgb(106, 168, 79);">PROPERTIES</span> SHORTHANDS FOR ACCESSING AND DENING GETTERS AND SETTER</font>
+        <br>
+</h3>
+    <div>
+        <font>
+            <pre><code>myObj.myProperty // myObj.getMyProperty() (when myObj.myProperty is not visible)</code></pre>
+        </font>
+    </div>
+    <h3 style="text-align: left;">
+    <font style="font-size: 24px;">
+        <span style="background-color: rgb(106, 168, 79);">NO STATEMENTS</span> EVERYTHING IS AN EXPRESSION<br>
+</font>
+    </h3>
+    <div>
+        <font>
+    <font style="font-size: 24px;">
+            </font>
+<pre><code>val data = try {
+   ﬁleContentsToString(’data.txt’)
+} catch (IOException e) {
+   "dummy data"
+}</code></pre>
+        </font>
+    </div>
+    <h3 style="text-align: left;">
+<font style="font-size: 24px;">
+    <span style="background-color: rgb(106, 168, 79);">TEMPLATE EXPRESSIONS</span> WITH INTELLIGENT WHITE SPACE HANDLING</font>
+    <br>
+</h3>
+    <div>
+        <font>
+            <pre><code>def someHTML(List&lt;Paragraph&gt; paragraphs) ’’’
+&lt;html&gt;
+  &lt;body&gt;
+   «FOR p : paragraphs»
+     «IF p.headLine != null»
+       &lt;h1&gt;«p.headline»&lt;/h1&gt;
+     «ENDIF»
+     &lt;p&gt;
+       «p.text»
+     &lt;/p&gt;
+   «ENDFOR»
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </font>
+    </div>
+</section>
+<section>
+    <h2>
+        <span style="background-color: rgb(230, 145, 56);">DEMO</span>
+    </h2>
+<div>
+    <br>
+</div>
+<h3>DECLARATIVE UI / DSL / BUILDER API</h3>
+<h3>
+<span style="font-size: 55.8px;">CODE GENERATION</span>
+</h3>
+<div>
+<br>
+<br>
+</div>
+</section>
+<section>
+    <h2>
+        <span style="background-color: rgb(166, 77, 121);">&nbsp;Q &amp; A&nbsp;</span>
+    </h2>
+<div>
+    <span style="background-color: rgb(166, 77, 121);">
+        <br>
+    </span>
+</div>
+<div>
+<span style="background-color: rgb(166, 77, 121);">
+    <br>
+</span>
+</div>
+<div class="fragment" data-fragment-index="0">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/brunodevic/images/43944/vaadin-activity.png" style="">
+<span style="background-color: rgb(166, 77, 121);">
+    <br>
+</span>
+</div>
+</section>
+</div>
+
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls : true,
+			progress : true,
+			history : true,
+			center : true,
+
+			theme : Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition : Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies : [ {
+				src : 'lib/js/classList.js',
+				condition : function() {
+					return !document.body.classList;
+				}
+			}, {
+				src : 'plugin/markdown/marked.js',
+				condition : function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src : 'plugin/markdown/markdown.js',
+				condition : function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src : 'plugin/highlight/highlight.js',
+				async : true,
+				callback : function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src : 'plugin/zoom-js/zoom.js',
+				async : true,
+				condition : function() {
+					return !!document.body.classList;
+				}
+			}, {
+				src : 'plugin/notes/notes.js',
+				async : true,
+				condition : function() {
+					return !!document.body.classList;
+				}
+			}
+			// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+			// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+	</script>
+
+</body>
+</html>
