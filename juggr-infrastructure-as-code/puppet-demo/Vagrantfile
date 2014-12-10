@@ -1,0 +1,31 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+VAGRANTFILE_API_VERSION = '2'
+
+Vagrant.configure("2") do |config|
+
+  topology = {
+      :web => "10.10.10.4",
+  }
+
+  [:web].collect do |server|
+    config.vm.define server do |server_config|
+
+      server_config.vm.network :forwarded_port, host: 8080, guest: 80 #web
+      server_config.vm.network :private_network, ip: topology[server]
+
+      server_config.vm.provider :virtualbox do |vb|
+        vb.customize ["modifyvm", :id, "--memory", "4096"]
+        vb.customize ["modifyvm", :id, "--name", ENV['VM_PREFIX'].to_s + server.to_s]
+      end
+
+      server_config.vm.box = "base"
+
+      server_config.vm.provision :puppet do |puppet|
+        puppet.module_path = 'puppet/modules'
+        puppet.manifests_path = 'puppet/manifests'
+        puppet.manifest_file = "init_#{server.to_s}.pp"
+      end
+    end
+  end
+end
